@@ -71,4 +71,12 @@ function deleteStudent(id){
     const removed = students.splice(index, 1);
     console.log(`Student with ID ${removed[0].name} (ID:${id}) was deleted successfully.`);
 }
+// Example usage
+createStudent(1, "Matanda", "A", "matandae@example.com");
+createStudent(2, "Biamungu", "B+", "biamungu@example.com");
 
+getAllStudents();
+getStudentById(1);
+updateStudent(2, { grade: "A+", email: "nestory@example.com" });
+deleteStudent(1);
+getAllStudents();
